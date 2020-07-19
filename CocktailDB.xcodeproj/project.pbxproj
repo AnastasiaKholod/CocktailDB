@@ -9,21 +9,31 @@
 /* Begin PBXBuildFile section */
 		CE3AA8D924C1D93D00065325 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3AA8D824C1D93D00065325 /* AppDelegate.swift */; };
 		CE3AA8DB24C1D93D00065325 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3AA8DA24C1D93D00065325 /* SceneDelegate.swift */; };
-		CE3AA8DD24C1D93D00065325 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3AA8DC24C1D93D00065325 /* ViewController.swift */; };
+		CE3AA8DD24C1D93D00065325 /* DrinksController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3AA8DC24C1D93D00065325 /* DrinksController.swift */; };
 		CE3AA8E024C1D93D00065325 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE3AA8DE24C1D93D00065325 /* Main.storyboard */; };
 		CE3AA8E224C1D94300065325 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE3AA8E124C1D94300065325 /* Assets.xcassets */; };
 		CE3AA8E524C1D94300065325 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE3AA8E324C1D94300065325 /* LaunchScreen.storyboard */; };
+		CE3AA8ED24C2F1B600065325 /* FilterControllers.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3AA8EC24C2F1B600065325 /* FilterControllers.swift */; };
+		CEDAFF6124C466340051A457 /* ImageViewExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDAFF6024C466340051A457 /* ImageViewExtention.swift */; };
+		CEDAFF6324C466E40051A457 /* DrinkModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDAFF6224C466E40051A457 /* DrinkModels.swift */; };
+		CEDAFF6524C467290051A457 /* FilterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDAFF6424C467290051A457 /* FilterModel.swift */; };
+		CEDAFF6724C4689B0051A457 /* TableViewCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDAFF6624C4689B0051A457 /* TableViewCells.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CE3AA8D524C1D93D00065325 /* CocktailDB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CocktailDB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE3AA8D824C1D93D00065325 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE3AA8DA24C1D93D00065325 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CE3AA8DC24C1D93D00065325 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CE3AA8DC24C1D93D00065325 /* DrinksController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinksController.swift; sourceTree = "<group>"; };
 		CE3AA8DF24C1D93D00065325 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CE3AA8E124C1D94300065325 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE3AA8E424C1D94300065325 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE3AA8E624C1D94300065325 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE3AA8EC24C2F1B600065325 /* FilterControllers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterControllers.swift; sourceTree = "<group>"; };
+		CEDAFF6024C466340051A457 /* ImageViewExtention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewExtention.swift; sourceTree = "<group>"; };
+		CEDAFF6224C466E40051A457 /* DrinkModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkModels.swift; sourceTree = "<group>"; };
+		CEDAFF6424C467290051A457 /* FilterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterModel.swift; sourceTree = "<group>"; };
+		CEDAFF6624C4689B0051A457 /* TableViewCells.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCells.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +66,68 @@
 		CE3AA8D724C1D93D00065325 /* CocktailDB */ = {
 			isa = PBXGroup;
 			children = (
-				CE3AA8D824C1D93D00065325 /* AppDelegate.swift */,
-				CE3AA8DA24C1D93D00065325 /* SceneDelegate.swift */,
-				CE3AA8DC24C1D93D00065325 /* ViewController.swift */,
-				CE3AA8DE24C1D93D00065325 /* Main.storyboard */,
-				CE3AA8E124C1D94300065325 /* Assets.xcassets */,
-				CE3AA8E324C1D94300065325 /* LaunchScreen.storyboard */,
+				CEDAFF5C24C464E20051A457 /* Controllers */,
+				CEDAFF5824C461620051A457 /* Model */,
+				CEDAFF5A24C4618D0051A457 /* ViewModels */,
+				CEDAFF5B24C461A50051A457 /* View */,
+				CEDAFF5F24C4658F0051A457 /* Resources */,
+				CEDAFF5E24C465020051A457 /* AppDelegate */,
 				CE3AA8E624C1D94300065325 /* Info.plist */,
 			);
 			path = CocktailDB;
+			sourceTree = "<group>";
+		};
+		CEDAFF5824C461620051A457 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CEDAFF6224C466E40051A457 /* DrinkModels.swift */,
+				CEDAFF6424C467290051A457 /* FilterModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CEDAFF5A24C4618D0051A457 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				CEDAFF6024C466340051A457 /* ImageViewExtention.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		CEDAFF5B24C461A50051A457 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CE3AA8DE24C1D93D00065325 /* Main.storyboard */,
+				CE3AA8E324C1D94300065325 /* LaunchScreen.storyboard */,
+				CEDAFF6624C4689B0051A457 /* TableViewCells.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CEDAFF5C24C464E20051A457 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CE3AA8DC24C1D93D00065325 /* DrinksController.swift */,
+				CE3AA8EC24C2F1B600065325 /* FilterControllers.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		CEDAFF5E24C465020051A457 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				CE3AA8DA24C1D93D00065325 /* SceneDelegate.swift */,
+				CE3AA8D824C1D93D00065325 /* AppDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		CEDAFF5F24C4658F0051A457 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CE3AA8E124C1D94300065325 /* Assets.xcassets */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +201,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE3AA8DD24C1D93D00065325 /* ViewController.swift in Sources */,
+				CE3AA8DD24C1D93D00065325 /* DrinksController.swift in Sources */,
+				CEDAFF6124C466340051A457 /* ImageViewExtention.swift in Sources */,
+				CEDAFF6324C466E40051A457 /* DrinkModels.swift in Sources */,
 				CE3AA8D924C1D93D00065325 /* AppDelegate.swift in Sources */,
 				CE3AA8DB24C1D93D00065325 /* SceneDelegate.swift in Sources */,
+				CEDAFF6724C4689B0051A457 /* TableViewCells.swift in Sources */,
+				CE3AA8ED24C2F1B600065325 /* FilterControllers.swift in Sources */,
+				CEDAFF6524C467290051A457 /* FilterModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,7 +354,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WJL4JH57MU;
-				INFOPLIST_FILE = CocktailDB/Info.plist;
+				"INFOPLIST_FILE[sdk=*]" = CocktailDB/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -304,7 +372,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WJL4JH57MU;
-				INFOPLIST_FILE = CocktailDB/Info.plist;
+				"INFOPLIST_FILE[sdk=*]" = CocktailDB/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
